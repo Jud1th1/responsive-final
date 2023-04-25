@@ -72,11 +72,11 @@
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color-second: hsl(var(--hue-color), 54%, 12%);
+  --first-color-second: hsl(8, 71%, 86%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 29%, 12%);
+  --input-color: hsl(40, 4%, 14%);
+  --body-color: hsl(40, 4%, 14%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
@@ -89,6 +89,10 @@ body.dark-theme {
   position: absolute;
   left: 3rem;
   bottom: 4rem;
+}
+
+.footer__social__dark{
+  color: var(--first-color-second);
 }
 
 .change-theme, .change-theme-name {
@@ -148,11 +152,13 @@ input {
   border: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+
 }
 
 button {
   cursor: pointer;
   border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 input {
@@ -327,10 +333,11 @@ input {
   display: block;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
+  font-size: 3em;
 }
 
 .home__data-title {
-  font-size: var(--biggest-font-size);
+  font-size: 5em;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
 }
@@ -347,14 +354,16 @@ input {
 }
 
 .home__info {
-  background-color: var(--first-color);
+  background-color: var(--first-color-second);
   display: flex;
+  flex-direction: column-reverse;
   padding: 1.5rem 1rem;
   align-items: center;
   column-gap: .5rem;
   position: absolute;
   right: 0;
   bottom: 1rem;
+  border-radius: 1em;
   width: 228px;
 }
 
@@ -367,6 +376,7 @@ input {
 
 .home__info-button {
   font-size: var(--smaller-font-size);
+  padding: 2em;
 }
 
 .home__info-overlay {
@@ -382,6 +392,31 @@ input {
   transform: var(--img-scale);
 }
 
+/*=============== Title===============*/
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 90pt;
+  top: 0;
+  bottom: 0;
+
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  color: white;
+
+  font-family: "Merriweather", serif;
+  font-size: 80pt;
+
+  user-select: none;
+}
+
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -391,10 +426,12 @@ input {
   font-weight: var(--font-semi-bold);
   transition: .3s;
   border-radius: .75em;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .button:hover {
   background-color: var(--first-color-alt);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .button--flex {
@@ -423,6 +460,7 @@ input {
 
 .about__description {
   margin-bottom: var(--mb-2);
+  padding-right: 1em;
 }
 
 .about__img {
@@ -438,10 +476,12 @@ input {
 
 .about__img-one {
   width: 130px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .about__img-two {
   width: 180px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .about__img-one, 
@@ -484,6 +524,7 @@ input {
 
 .discover__img {
   transition: var(--img-transition);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .discover__img:hover {
@@ -527,6 +568,7 @@ input {
 .experience__img-one, 
 .experience__img-two {
   transition: var(--img-transition);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .experience__img-one:hover, 
@@ -709,8 +751,8 @@ input {
 }
 
 .footer__social {
-  font-size: 1.25rem;
-  color: var(--title-color);
+  font-size: 2rem;
+  color: var(--first-color-second);
   margin-right: var(--mb-1-25);
 }
 
@@ -794,6 +836,21 @@ input {
   background-color: var(--text-color-light);
 }
 
+/*=============== Quote ===============*/
+.quote{
+  text-align: center;
+  padding: 5em;
+}
+
+.creole{
+  font-family: 'Dancing Script', cursive;
+  font-size: 5em;
+  color: #F28482;
+}
+
+/*=============== Graphics ===============*/
+
+
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
@@ -818,7 +875,11 @@ input {
   .video__container {
     padding: 0;
   }
+  .creole{
+    font-size: 1em;
+  }
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
