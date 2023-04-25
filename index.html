@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/png">
 
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
+         <!--=============== FONTS ====================-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Lora:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
         <!--=============== SWIPER CSS ===============-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -56,7 +59,7 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <img src="assets/img/kids.jpg" alt="" class="home__img">
+                <img src="assets/img/kids.jpg" alt="" class="home__img" id="overlay" >
 
                 <div class="home__container container grid">
                     <div class="home__data">
@@ -77,14 +80,14 @@
 
                     <div class="home__info">
                         <div>
-                            <span class="home__info-title">5 Best Places to Visit in Florida</span>
-                            <a href="" class="button button--flex button--link home__info-button">
-                                More <i class="ri-arrow-right-line"></i>
+                            <span class="home__info-title">RUSH Returns</span>
+                            <a href="#newsletter" class="button button--flex button--link home__info-button">
+                                Learn more <i class="ri-arrow-right-line"></i>
                             </a>
                         </div>
 
                         <div class="home__info-overlay">
-                            <img src="assets/img/hold.jpeg" alt="" class="home__info-img">
+                            <img src="assets/img/RUSHlogo.jpg" alt="" class="home__info-img">
                         </div>
                     </div>
                 </div>
@@ -100,6 +103,7 @@
                                 <h2>Our Vision:</h2>
                                 <p>Rise Up Serve Haiti Inc. vision is to promote higher education and community empowerment.</p>
                             </div>
+                            <br>
                             <div class="mission">
                                 <h2>Our Mission:</h2>
                                 <p>Rise Up Serve Haiti's Mission is to educate and empower the Haitian community ( men, women, and children) in Marin, Bertrand, and Tricon  using sustainable approaches to development by providing economic, cultural, health, and social services support.</p>
@@ -130,8 +134,8 @@
                         <div class="discover__card swiper-slide">
                             <img src="assets/img/summercamp.png" alt="" class="discover__img">
                             <div class="discover__data">
-                                <h2 class="discover__title">9 Donated Computers</h2>
-                                <span class="discover__description">24 tours available</span>
+                                <h2 class="discover__title">Summer Camp</h2>
+                                <span class="discover__description">Learn More</span>
                             </div>
                         </div>
 
@@ -140,7 +144,7 @@
                             <img src="assets/img/cleanwater.png" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Clean Water Project</h2>
-                                <span class="discover__description">15 tours available</span>
+                                <span class="discover__description">Learn More</span>
                             </div>
                         </div>
 
@@ -149,7 +153,7 @@
                             <img src="assets/img/missiontrip.png" alt="" class="discover__img">
                             <div class="discover__data">
                                 <h2 class="discover__title">Mission Trip</h2>
-                                <span class="discover__description">18 tours available</span>
+                                <span class="discover__description">Learn More</span>
                             </div>
                         </div>
 
@@ -157,8 +161,8 @@
                         <div class="discover__card swiper-slide">
                             <img src="assets/img/computers.png" alt="" class="discover__img">
                             <div class="discover__data">
-                                <h2 class="discover__title">Summer Camp</h2>
-                                <span class="discover__description">32 tours available</span>
+                                <h2 class="discover__title">Computers Donated</h2>
+                                <span class="discover__description">Learn More</span>
                             </div>
                         </div>
                     </div>
@@ -193,7 +197,7 @@
                         </div>
                         
                         <div class="experience__overlay">
-                            <img src="assets/img/hold.jpeg" alt="" class="experience__img-two">
+                            <img src="assets/img/RUSH Achieve Graphic.png" alt="" class="experience__img-two">
                         </div>
                     </div>
                 </div>
@@ -204,7 +208,7 @@
                 <h2 class="section__title">Video Tour</h2>
 
                 <div class="video__container container">
-                    <p class="video__description">Watch our video to discover some of our glorious tropical getaways.
+                    <p class="video__description">Vist Haiti.
                     </p>
 
                     <div class="video__content">
@@ -220,24 +224,23 @@
             </section>
 
             <!--==================== Donate ====================-->
-            <section class="place section" id="Donate">
+            <section class="place section" id="donate">
                 <h2 class="section__title">Donate</h2>
 
                 <div class="place__container container grid">
                     <!--==================== PLACES CARD 1 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/hold.jpeg" alt="" class="place__img">
+                        <img src="assets/img/schoolsupplies.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4.8</span>
+                                <span class="place__rating-number">25 made</span>
                             </span>
 
                             <div class="place__data">
                                 <h3 class="place__title">School Supplies</h3>
-                                <span class="place__subtitle">Florida</span>
-                                <span class="place__price">$2499</span>
+                                <span class="place__subtitle">Currently Accepting</span>
+                                <span class="place__price">$0+</span>
                             </div>
                         </div>
 
@@ -248,18 +251,17 @@
 
                     <!--==================== PLACES CARD 2 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/hold.jpeg" alt="" class="place__img">
+                        <img src="assets/img/clothing.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">5.0</span>
+                                <span class="place__rating-number">3 boxes made</span>
                             </span>
 
                             <div class="place__data">
                                 <h3 class="place__title">Clothing</h3>
-                                <span class="place__subtitle">Florida</span>
-                                <span class="place__price">$1599</span>
+                                <span class="place__subtitle">Currently Accepting</span>
+                                <span class="place__price">$0+</span>
                             </div>
                         </div>
 
@@ -270,18 +272,17 @@
 
                     <!--==================== PLACES CARD 3 ====================-->
                     <div class="place__card">
-                        <img src="assets/img/hold.jpeg" alt="" class="place__img">
+                        <img src="assets/img/funds.jpg" alt="" class="place__img">
                         
                         <div class="place__content">
                             <span class="place__rating">
-                                <i class="ri-star-line place__rating-icon"></i>
-                                <span class="place__rating-number">4.9</span>
+                                <span class="place__rating-number">$3000 raised</span>
                             </span>
 
                             <div class="place__data">
                                 <h3 class="place__title">Funds</h3>
-                                <span class="place__subtitle">Florida</span>
-                                <span class="place__price">$3499</span>
+                                <span class="place__subtitle">Currently Accepting</span>
+                                <span class="place__price">$1+</span>
                             </div>
                         </div>
 
@@ -298,8 +299,7 @@
                 <div class="subscribe__bg">
                     <div class="subscribe__container container">
                         <h2 class="section__title subscribe__title">Join Our <br> Newsletter</h2>
-                        <p class="subscribe__description">Sign up for our newsletter and get a 
-                            special 20% discount.
+                        <p class="subscribe__description">Sign up for our newsletter to keep up with our fundraising efforts and mission trips.
                         </p>
     
                         <form action="" class="subscribe__form">
