@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Jud1th1/responsive-final
-- Live Site URL: 
+- Live Site URL: https://rush-org.netlify.app/
 
 ## My process
 -	Using the files provided to me I created a GitHub repo to place everything a set up my webpage
